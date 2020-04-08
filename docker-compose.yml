@@ -3,5 +3,5 @@ version: '3'
 services:
   web:
     build: .
-    image: dannyb/github-redirector
+    image: dannyben/github-redirector
     ports: ["3000:3000"]
