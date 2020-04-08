@@ -5,7 +5,7 @@ set :bind, '0.0.0.0'
 set :port, 3000
 set :server, :puma
 
-def github(repo: 'rush-cli', file: nil)
+def github(repo:, file: nil)
   file ||= repo
   ref = params[:v] ? "v#{params[:v]}" : 'master'
   redirect "https://raw.githubusercontent.com/DannyBen/#{repo}/#{ref}/#{file}"
