@@ -17,9 +17,10 @@ not_found do
   "404 Not Found"
 end
 
-get("/rush")         { github repo: 'rush-cli', file: 'rush' }
-get("/rush/setup")   { github repo: 'rush-cli', file: 'setup' }
-get("/alf")          { github repo: 'alf' }
-get("/alf/setup")    { github repo: 'alf', file: 'setup' }
-get("/opcode")       { github repo: 'opcode', file: 'op' }
-get("/opcode/setup") { github repo: 'opcode', file: 'setup' }
+get("/rush")           { github repo: 'rush-cli', file: 'rush' }
+get("/rush/setup")     { github repo: 'rush-cli', file: 'setup' }
+get("/alf")            { github repo: 'alf' }
+get("/alf/setup")      { github repo: 'alf', file: 'setup' }
+get("/opcode")         { github repo: 'opcode', file: 'op' }
+get("/opcode/setup")   { github repo: 'opcode', file: 'setup' }
+get("/approvals.bash") { github repo: 'approvals.bash' }
