@@ -1,0 +1,29 @@
+defaults:
+  user: DannyBen
+
+redirects:
+  /rush:
+    repo: rush-cli
+    file: rush
+  /rush/setup:
+    repo: rush-cli
+    file: setup
+  /alf:
+    repo: alf
+  /alf/setup:
+    repo: alf
+    file: setup
+  /op:
+    repo: opcode
+    file: op
+  /op/setup:
+    repo: opcode
+    file: setup
+  /opcode:
+    repo: opcode
+    file: op
+  /opcode/setup:
+    repo: opcode
+    file: setup
+  /approvals.bash:
+    repo: approvals.bash

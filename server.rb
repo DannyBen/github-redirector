@@ -1,26 +1,35 @@
 #!/usr/bin/env ruby
 require 'sinatra'
+require 'yaml'
 
 set :bind, '0.0.0.0'
 set :port, 3000
 set :server, :puma
 
-def github(repo:, file: nil)
+def github(repo:, user: nil, file: nil)
   file ||= repo
+  user ||= config['defaults']['user']
   ref = params[:v] ? "v#{params[:v]}" : 'master'
-  redirect "https://raw.githubusercontent.com/DannyBen/#{repo}/#{ref}/#{file}"
+  redirect "https://raw.githubusercontent.com/#{user}/#{repo}/#{ref}/#{file}"
+end
+
+def config
+  @config ||= YAML.load_file('config.yml')
 end
 
 not_found do
   status 404
   content_type :text
-  "404 Not Found"
+  "404 No matching redirect"
 end
 
-get("/rush")           { github repo: 'rush-cli', file: 'rush' }
-get("/rush/setup")     { github repo: 'rush-cli', file: 'setup' }
-get("/alf")            { github repo: 'alf' }
-get("/alf/setup")      { github repo: 'alf', file: 'setup' }
-get("/opcode")         { github repo: 'opcode', file: 'op' }
-get("/opcode/setup")   { github repo: 'opcode', file: 'setup' }
-get("/approvals.bash") { github repo: 'approvals.bash' }
+get '/' do
+  content_type :text
+  "available routes:\n" + config['redirects'].keys.join("\n")
+end
+
+config['redirects'].each do |route, data|
+  get route do
+    github user: data['user'], repo: data['repo'], file: data['file']
+  end
+end
