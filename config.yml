@@ -27,3 +27,8 @@ redirects:
     file: setup
   /approvals.bash:
     repo: approvals.bash
+  /git-changelog:
+    repo: git-changelog
+  /git-changelog/setup:
+    repo: git-changelog
+    file: setup
