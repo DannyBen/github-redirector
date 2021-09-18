@@ -32,3 +32,8 @@ redirects:
   /git-changelog/setup:
     repo: git-changelog
     file: setup
+  /crypto-cli:
+    repo: crypto-cli
+  /crypto-cli/setup:
+    repo: crypto-cli
+    file: setup
