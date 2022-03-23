@@ -2,6 +2,8 @@ defaults:
   user: DannyBen
 
 redirects:
+  /bootstrap:
+    repo: bootstrap
   /rush:
     repo: rush-cli
     file: rush
