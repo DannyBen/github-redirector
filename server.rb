@@ -25,7 +25,7 @@ end
 
 get '/' do
   content_type :text
-  "available routes:\n" + config['redirects'].keys.join("\n")
+  "available routes:\n" + config['redirects'].keys.sort.join("\n")
 end
 
 config['redirects'].each do |route, data|
