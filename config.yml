@@ -40,8 +40,8 @@ redirects:
   /crypto-cli/setup:
     repo: crypto-cli
     file: setup
-  /fuzzy-cd:
-    repo: fuzzy-cd
-  /fuzzy-cd/setup:
-    repo: fuzzy-cd
+  /fuzzycd:
+    repo: fuzzycd
+  /fuzzycd/setup:
+    repo: fuzzycd
     file: setup
