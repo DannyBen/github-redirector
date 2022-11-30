@@ -2,18 +2,30 @@ defaults:
   user: DannyBen
 
 redirects:
-  /bootstrap:
-    repo: bootstrap
-  /rush:
-    repo: rush-cli
-    file: rush
-  /rush/setup:
-    repo: rush-cli
-    file: setup
   /alf:
     repo: alf
   /alf/setup:
     repo: alf
+    file: setup
+  /approvals.bash:
+    repo: approvals.bash
+  /bootstrap:
+    repo: bootstrap
+  /crypto-cli:
+    repo: crypto-cli
+    file: crypto
+  /crypto-cli/setup:
+    repo: crypto-cli
+    file: setup
+  /fuzzycd:
+    repo: fuzzycd
+  /fuzzycd/setup:
+    repo: fuzzycd
+    file: setup
+  /git-changelog:
+    repo: git-changelog
+  /git-changelog/setup:
+    repo: git-changelog
     file: setup
   /op:
     repo: opcode
@@ -27,21 +39,14 @@ redirects:
   /opcode/setup:
     repo: opcode
     file: setup
-  /approvals.bash:
-    repo: approvals.bash
-  /git-changelog:
-    repo: git-changelog
-  /git-changelog/setup:
-    repo: git-changelog
+  /respec:
+    repo: respec
+  /respec/setup:
+    repo: respec
     file: setup
-  /crypto-cli:
-    repo: crypto-cli
-    file: crypto
-  /crypto-cli/setup:
-    repo: crypto-cli
-    file: setup
-  /fuzzycd:
-    repo: fuzzycd
-  /fuzzycd/setup:
-    repo: fuzzycd
+  /rush:
+    repo: rush-cli
+    file: rush
+  /rush/setup:
+    repo: rush-cli
     file: setup
