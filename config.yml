@@ -7,6 +7,9 @@ redirects:
   /alf/setup:
     repo: alf
     file: setup
+  /alf/uninstall:
+    repo: alf
+    file: uninstall
   /approvals.bash:
     repo: approvals.bash
   /bootstrap:
