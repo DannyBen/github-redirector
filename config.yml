@@ -30,6 +30,9 @@ redirects:
   /git-changelog/setup:
     repo: git-changelog
     file: setup
+  /git-changelog/uninstall:
+    repo: git-changelog
+    file: uninstall
   /op:
     repo: opcode
     file: op
