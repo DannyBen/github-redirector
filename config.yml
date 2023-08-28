@@ -56,3 +56,6 @@ redirects:
   /rush/setup:
     repo: rush-cli
     file: setup
+  /rush/uninstall:
+    repo: rush-cli
+    file: uninstall
