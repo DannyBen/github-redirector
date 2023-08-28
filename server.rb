@@ -25,7 +25,12 @@ end
 
 get '/' do
   content_type :text
-  "available routes:\n" + config['redirects'].keys.sort.join("\n")
+
+  result = ["Available Routes:", ""]
+  result += config['redirects'].keys.sort.map { |x| "- #{x}" }
+  result += ["", "Add ?v=VERSION to get a specific version"]
+
+  result.join "\n"
 end
 
 config['redirects'].each do |route, data|
