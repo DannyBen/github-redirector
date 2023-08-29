@@ -2,60 +2,26 @@ defaults:
   user: DannyBen
 
 redirects:
-  /alf:
-    repo: alf
-  /alf/setup:
-    repo: alf
-    file: setup
-  /alf/uninstall:
-    repo: alf
-    file: uninstall
-  /approvals.bash:
-    repo: approvals.bash
-  /bootstrap:
-    repo: bootstrap
-  /crypto-cli:
-    repo: crypto-cli
-    file: crypto
-  /crypto-cli/setup:
-    repo: crypto-cli
-    file: setup
-  /fuzzycd:
-    repo: fuzzycd
-  /fuzzycd/setup:
-    repo: fuzzycd
-    file: setup
-  /git-changelog:
-    repo: git-changelog
-  /git-changelog/setup:
-    repo: git-changelog
-    file: setup
-  /git-changelog/uninstall:
-    repo: git-changelog
-    file: uninstall
-  /op:
-    repo: opcode
-    file: op
-  /op/setup:
-    repo: opcode
-    file: setup
-  /opcode:
-    repo: opcode
-    file: op
-  /opcode/setup:
-    repo: opcode
-    file: setup
-  /respec:
-    repo: respec
-  /respec/setup:
-    repo: respec
-    file: setup
-  /rush:
-    repo: rush-cli
-    file: rush
-  /rush/setup:
-    repo: rush-cli
-    file: setup
-  /rush/uninstall:
-    repo: rush-cli
-    file: uninstall
+  /alf:                     { repo: alf }
+  /alf/setup:               { repo: alf, file: setup }
+  /alf/uninstall:           { repo: alf, file: uninstall }
+  /approvals.bash:          { repo: approvals.bash }
+  /bootstrap:               { repo: bootstrap }
+  /crypto-cli:              { repo: crypto-cli,  file: crypto }
+  /crypto-cli/setup:        { repo: crypto-cli, file: setup }
+  /fuzzycd:                 { repo: fuzzycd }
+  /fuzzycd/setup:           { repo: fuzzycd, file: setup }
+  /git-changelog:           { repo: git-changelog}
+  /git-changelog/setup:     { repo: git-changelog, file: setup }
+  /git-changelog/uninstall: { repo: git-changelog, file: uninstall }
+  /op:                      { repo: opcode, file: op }
+  /op/setup:                { repo: opcode, file: setup }
+  /op/uninstall:            { repo: opcode, file: uninstall }
+  /opcode:                  { repo: opcode, file: op }
+  /opcode/setup:            { repo: opcode, file: setup }
+  /opcode/uninstall:        { repo: opcode, file: uninstall }
+  /respec:                  { repo: respec }
+  /respec/setup:            { repo: respec, file: setup }
+  /rush:                    { repo: rush-cli, file: rush }
+  /rush/setup:              { repo: rush-cli, file: setup }
+  /rush/uninstall:          { repo: rush-cli, file: uninstall }
