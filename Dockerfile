@@ -7,6 +7,8 @@ RUN gem install bundler && \
 
 WORKDIR /app
 COPY . .
+
+ENV RACK_ENV=production
 RUN chmod +x /app/server.rb
 
 EXPOSE 3000
