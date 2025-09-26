@@ -1,6 +1,6 @@
 # GitHub Redirector
 
-> DEPRECATED
+> DEPRECATED  
 > Moved to https://github.com/DannyBen/cloudflare-redirector
 
 ---
